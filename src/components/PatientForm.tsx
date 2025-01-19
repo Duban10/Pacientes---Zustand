@@ -43,7 +43,7 @@ export default function PatientForm() {
   
   return (
     <div className="md:w-1/2 lg:w-2/5 mx-5">
-        <h2 className="font-black text-3xl text-center">Seguimiento Pacientes</h2>
+        <h2 className="font-black text-3xl text-center xs:text-2xl">Seguimiento Pacientes</h2>
 
         <p className="text-lg mt-5 text-center mb-10">
             Añade Pacientes y {''}
@@ -157,7 +157,7 @@ export default function PatientForm() {
 
             <input
                 type="submit"
-                className="bg-indigo-600 w-full p-3 text-white uppercase font-bold hover:bg-indigo-700 cursor-pointer transition-colors"
+                className="bg-indigo-600 w-full p-3 text-white uppercase font-bold hover:bg-indigo-700 cursor-pointer transition-colors rounded"
                 value='Guardar Paciente'
             />
         </form> 

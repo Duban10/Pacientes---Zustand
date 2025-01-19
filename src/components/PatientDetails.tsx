@@ -28,9 +28,9 @@ const PatientDetails = ({patient}: PatientDetailsProps) => {
         <PatientDetailItem label="Fecha de Alta" value={patient.date.toString()} />
         <PatientDetailItem label="Sintomas" value={patient.symptoms} />
 
-        <div className="flex justify-between mt-10">
-            <button className="bg-indigo-600 px-3 py-1 text-white rounded-md" onClick={() => getPatientById(patient.id)}>Editar</button>
-            <button className="bg-red-600 px-3 py-1 text-white rounded-md" onClick={handleDelete}>Eliminar</button>
+        <div className="flex justify-between mt-10 xs:flex-col xs:gap-3">
+            <button className="bg-indigo-600 px-3 py-1 text-white rounded-md xs:w-full" onClick={() => getPatientById(patient.id)}>Editar</button>
+            <button className="bg-red-600 px-3 py-1 text-white rounded-md xs:w-full" onClick={handleDelete}>Eliminar</button>
         </div>
 
 
