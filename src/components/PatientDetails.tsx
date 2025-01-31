@@ -24,6 +24,7 @@ const PatientDetails = ({patient}: PatientDetailsProps) => {
     <div className="mx-5 my-10 bg-white shadow-md px-5 py-10 rounded-xl">
         <PatientDetailItem label="Id" value={patient.id} />
         <PatientDetailItem label="Nombre" value={patient.name} />
+        <PatientDetailItem label="Propietario" value={patient.caretaker} />
         <PatientDetailItem label="Email" value={patient.email} />
         <PatientDetailItem label="Fecha de Alta" value={patient.date.toString()} />
         <PatientDetailItem label="Sintomas" value={patient.symptoms} />
